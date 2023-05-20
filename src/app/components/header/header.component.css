@@ -23,6 +23,10 @@
     width: 46px;
 }
 
+.container-elements{
+  width: 100%;
+}
+
 .menuNavegacion {
     padding: 4px;
     display: flex;
@@ -72,10 +76,23 @@
     border-bottom: 2px solid #0026ca;
   }
 
+  @media (min-width:801px){
+    .enlaces{
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+  }
 
-  @media (max-width:800px){
+
+  @media (min-width:601px) and (max-width:800px){
     .menuNavegacion{
       flex-direction: column;
+
+    }
+
+    .enlaces{
+      margin-top: 10px;
+      margin-bottom: 15px;
     }
 
     .divImgNav img{
@@ -90,9 +107,43 @@
   }
 
   @media (max-width:600px){
+
+   
+    .logo{
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .menuNavegacion{
+      justify-content: left;
+ 
+    }
+
+
+    .divImgNav img{
+      display: none;
+  }
+
     .enlaces{
         flex-direction: column;
+        justify-content: initial;
+        align-items: flex-start;
     }
+
+    .navLi{
+      margin-left: 20px;
+      text-align: start;
+      padding: 5px;
+
+    }
+
+    .title{
+      display: none;
+    }
+
+    .logo span {
+      display: none;
+  }
   
   }
 
@@ -162,6 +213,53 @@
           transform: translateX(0);
         } 
       } 
+
+      .slide-in-right {
+        -webkit-animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
+
+      .slide-in-right1 {
+        -webkit-animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+                animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+      }
+
+      .slide-in-right2 {
+        -webkit-animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+                animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+      }
+
+      .slide-in-right3 {
+        -webkit-animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
+                animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
+      }
+
+     
+      @-webkit-keyframes slide-in-right {
+        0% {
+          -webkit-transform: translateX(1000px);
+                  transform: translateX(1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-right {
+        0% {
+          -webkit-transform: translateX(1000px);
+                  transform: translateX(1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
 
 
 
