@@ -37,15 +37,15 @@ export class HeaderComponent implements OnInit {
    * implementado para saber cuando el usuario le da clic fuera
    * del menu y asi poder ocultarlo
    */
-  @ViewChild('enlaces2', { static: true }) miDiv!: ElementRef;
+  @ViewChild('enlaces2', { static: true }) nav!: ElementRef;
 
-  // Listener para el evento de clic en cualquier parte del documento
+  //Verificamos los clics en el DOM
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
-    // Verificar si el objetivo del evento no es el elemento div ni un descendiente directo del mismo
+    // verificamos si donde hacemos clic no es el elemento del div ni esta dentro de este
     if (
-      !this.miDiv.nativeElement.contains(event.target) &&
-      event.target !== this.miDiv.nativeElement
+      !this.nav.nativeElement.contains(event.target) &&
+      event.target !== this.nav.nativeElement
     ) {
       console.log('Clic fuera del elemento div');
       if(!this.largeWindon){
@@ -59,48 +59,34 @@ export class HeaderComponent implements OnInit {
 
 
   cambiarMenu(){
+    
     this.mostrarEnlaces=true;
     this.cont++;
     console.log(this.mostrarEnlaces)
   }
 
   containerInicio(){
-    this.mostrarEnlaces=false;
+    if(!this.largeWindon) this.mostrarEnlaces=false;
+    
     console.log(this.mostrarEnlaces)
   }
 
   containerConocimientos(){
-    this.mostrarEnlaces=false;
+    if(!this.largeWindon) this.mostrarEnlaces=false;
     console.log(this.mostrarEnlaces)
   }
 
   containerProyectos(){
-    this.mostrarEnlaces=false;
+    if(!this.largeWindon) this.mostrarEnlaces=false;
     console.log(this.mostrarEnlaces)
   }
 
   containerDocumentos(){
-    this.mostrarEnlaces=false;
+    if(!this.largeWindon) this.mostrarEnlaces=false;
     console.log(this.mostrarEnlaces)
   }
 
 notAlone(){
- console.log(
-"\n" +
- ".                     ."+"\n" +
- ".       .-----.       ." + "\n" +
- ".      /       \\\      ."+ "\n" +
- ".     /_       _\\\     ."+ "\n" +
- ".    // \\\     / \\\\\    ."+ "\n" +
- ".    |\\\__\\\   /__/|    ."+ "\n" +
- ".    \\\    | |    /    ."+ "\n" +
- ".     \\\         /     ."+ "\n" +
- ".      \\\  __   /      ."+ "\n" +
- ".       '.___.'       ."+ "\n" +
- ".        |   |        ."+ "\n" +
- ".  You are not alone  ."+ "\n" +
- ".   domain/notalone   ."+ "\n"
- )
  	
 }
 
