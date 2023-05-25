@@ -1,7 +1,5 @@
 .header{
     background: #020940 url(/assets/img/background-header.png) center center/cover no-repeat local; 
-    z-index: 2;
-    position: fixed;
     width: 100%;
 }
 
@@ -106,12 +104,21 @@
 
   }
 
+
   @media (max-width:600px){
 
+    .header{
+      z-index: 4;
+      position: fixed;
+    }
    
     .logo{
       margin-bottom: 0;
       padding-bottom: 0;
+    }
+
+    .logo img{
+      display: none;
     }
 
     .menuNavegacion{

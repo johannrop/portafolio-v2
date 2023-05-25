@@ -1,6 +1,5 @@
 .footer{
-    position: absolute;
-    bottom: 0;
+   
     width: 100%;
     
 }
@@ -21,6 +20,7 @@
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    width:100%;
 }
 
 .divFooter img {

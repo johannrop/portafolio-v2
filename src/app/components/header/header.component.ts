@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -18,6 +19,8 @@ export class HeaderComponent implements OnInit {
     if(!this.mostrarEnlaces) this.onWindowResize(null);
     
   }
+
+  constructor(private router: Router) { }
 
   /**
    * @param onWindowResize
@@ -67,7 +70,7 @@ export class HeaderComponent implements OnInit {
 
   containerInicio(){
     if(!this.largeWindon) this.mostrarEnlaces=false;
-    
+    this.router.navigate(['/start'])
     console.log(this.mostrarEnlaces)
   }
 
