@@ -1,3 +1,251 @@
-span{
-    color: black;
+/* comienza la section presentacion */
+.secPresentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+  .divTituloPresentacion{
+    background: #020940 url(/assets/img/imgDiv3.png) center center/cover no-repeat local; 
+    width: 100%;
+    text-align: center;
+    color: white;
+
+  }
+
+  .envolturaPopup {
+    background: rgba(0, 0, 0, 0.508);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
 }
+
+.popup {
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 12vh auto;
+  border-radius: 5px;
+  position: relative;
+}
+  .divPresentacion{
+    display: flex;
+    align-items: center;
+    height: auto;
+    background: white;
+    border-bottom: 1px solid black
+
+  }
+
+  .img-presentacion{
+    width: 50vh;
+    padding: 20px 5px 20px 10px;
+  }
+  
+  .pPresentacion{
+    padding: 10px;
+    margin: 0;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .pesentacion{
+    padding: 0 28px 0 28px;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  /* finaliza section de presentacion */
+
+
+
+
+
+  /** Comienza la seccion de Actitudes */
+  .tecnologias{
+    color: #0026ca;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 100px; */ 
+  }
+  
+  .tituloActitudes{
+    height: 40px;
+    width: 100%;
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #000000; 
+    background: #020940 url(/assets/img/imgDiv3.png) center center/cover no-repeat local;     
+  }
+  
+  #pTar{
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .tecnologias img{
+    width: 100%;
+    height: 208px;
+  }
+  
+   p{
+    color: #7d7c7c;    
+  }
+  
+  .divTarjetas{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      justify-content: center;
+      font-size: 18px;
+      background: #E8F9FD;
+      width: 100%;
+  
+      
+  }
+
+  .eventMetodologia{
+    z-index: 5;
+    display: block;
+  }
+  
+  .divTarjetasPro{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    font-size: 18px;
+    background: #E8F9FD;
+    width: 100%;    
+  }
+  
+  .parrafoTarjeta{
+    color: #363636;
+  }
+  
+  .tarjetaTec{
+    display: inline-block;
+    width: 250px;
+    height: 368px;
+    text-align: left;
+    background: #ffffff;
+    cursor: pointer;
+    border:1px solid #828282;
+    
+  }
+  .tarjetaPro{
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: auto;
+    text-align: left;
+    background: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    
+  }
+  
+  .tarjetaPro:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .imgProyecto{
+    border-radius: 50%;
+  }
+  
+  .tarjetaTec a{
+    color: #000000;
+    
+  }
+  
+  .tarjetaTec:hover{
+    font-size: 20px;
+    -webkit-animation:jump 1s ease 0s 1 normal;
+    -moz-animation:jump 1s ease 0s 1 normal;
+    -ms-animation:jump 1s ease 0s 1 normal;
+    animation:jump 1s ease 0s 1 normal;
+    }
+    
+    @-webkit-keyframes jump{
+    0%{ -webkit-transform:translateY(0); transform:translateY(0); }
+    20%{ -webkit-transform:translateY(0); transform:translateY(0); }
+    40%{ -webkit-transform:translateY(-30px); transform:translateY(-30px); }
+    50%{ -webkit-transform:translateY(0); transform:translateY(0); }
+  
+    }
+    
+    @keyframes jump{
+    0%{ transform:translateY(0); }
+    20%{ transform:translateY(0); }
+    40%{ transform:translateY(-30px); }
+    50%{ transform:translateY(0); }
+  
+    }
+  
+  .contendidoDivTec{
+    padding: 24px;
+    font-family: 'Roboto', sans-serif;
+    
+  
+  }
+  
+  .contenidoDivPro{
+    margin-top: 10%;
+    color: black;
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+  }
+   
+  
+  .tarjetaTec span{
+    margin-top: 12px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  
+  
+  .tarjetaTec p{
+    color: #363636;
+  }
+  /* finaliza section de tecnologias */
+
+
+
+    /** fin de  Actitudes */
+
+  @media (max-width: 600px){
+    .divTituloPresentacion{
+      margin-top: 30px;
+      
+    }
+
+    .divPresentacion{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .img-presentacion{
+    padding: 0;
+    margin-left: -3px;
+
+    }
+  }

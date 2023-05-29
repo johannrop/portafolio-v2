@@ -1,20 +1,147 @@
 <app-carrusel></app-carrusel>
 
-<h1>hello people</h1>
-<span>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime est saepe laudantium! Reiciendis labore sint eos tenetur illum omnis, veritatis recusandae quam provident aliquid laboriosam optio. Quia cupiditate dolores nostrum!
-</span>
+<section id="secPresentacion" class="secPresentacion">
+    <div class="divTituloPresentacion">
+        <p class="pPresentacion">PRESENTACIÓN</p>
+    </div>
+    
+    <div class="divPresentacion">
+        <div>
+            <img class="img-presentacion" src="assets/img/coding.png" alt="">
+        </div>
+        <div>
+            <P class="pesentacion">Hola, mi nombre es Johann y soy desarrollador FullStack. Culmine mis estudios de  ingeniería de sistemas en la universidad de Pamplona; donde aprendi los conceptos y lógica necesaria para resolver problemas de forma inteligente. Con mi experiencia y conocimiento he logrado desarrollar soluciones practicas, dinámicas y seguras. Generando satisfacción y bienestar informático que toda empresa deberia tener para su crecimiento y fortaleza.
+            </P>
+            <P class="pesentacion">Esta pagina la he desarrollado para crear una hoja de presentación, donde podras conocer de forma tangible mis conocimientos, actitudes y alcance de mis proyectos, espero te guste y la encuentres de tú agrado.
+            </P>
+            <P class="pesentacion">Te invito a echarle una hojeada y recuerda que en la parte final de la pagina esta la forma de contactarme.
+            </P>
+        </div>
+    </div>     
+</section>
 
-<span>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime est saepe laudantium! Reiciendis labore sint eos tenetur illum omnis, veritatis recusandae quam provident aliquid laboriosam optio. Quia cupiditate dolores nostrum!
-</span>
 
-<span>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime est saepe laudantium! Reiciendis labore sint eos tenetur illum omnis, veritatis recusandae quam provident aliquid laboriosam optio. Quia cupiditate dolores nostrum!
-</span>
+<section id="tecnologias" class="tecnologias" style="display: flex;"> 
 
-<span>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime est saepe laudantium! Reiciendis labore sint eos tenetur illum omnis, veritatis recusandae quam provident aliquid laboriosam optio. Quia cupiditate dolores nostrum!
-</span>
+    <div class="tituloActitudes">
+        <p id="pTar">ACTITUDES</p>
+    </div>
 
-<br>
+    <div id="divTarjetas" class="divTarjetas">
+
+         <!-- ** Inicio  de tarjetas de actitudes ** -->
+
+        <a id="desarrollo" (click)="mostrarTarjeta('eventDesarrollo')">
+          <div class="tarjetaTec">
+            <img src="https://i.ibb.co/x6FM3zV/metodo.jpg" alt="">
+            <div class="contendidoDivTec">
+              <span>DESARROLLO</span>
+              <p>Imagine y cree su sistema</p>
+            </div>
+          </div>
+        </a>
+          
+        <div id="eventDesarrollo" (click)="ocultarTarjeta('eventDesarrollo')" class="envolturaPopup">
+          <div class="popup">
+            <div class="popupClose">X</div>
+            <div class="modal-content">
+              <img src="https://i.ibb.co/x6FM3zV/metodo.jpg" alt="">
+              <span>DESARROLLO</span>
+              <p>La programación es una parte importante en el ámbito de desarrollo de software, ya que es el paso de loimaginado a su creación. Esto gracias a los diferentes lenguajes de programación que existen, cada unoajustándose a las necesidades requeridas</p>
+            </div>
+          </div>
+        </div>
+                
+        <!-- ***** -->
+                
+        <a id="baseDatos" (click)="mostrarTarjeta('eventBaseDatos')">
+            <div class="tarjetaTec">
+                <img src="https://i.ibb.co/ZJFxsdt/database.jpg" alt="">
+                <div class="contendidoDivTec">
+                    <span>BASE DE DATOS</span>
+                    <p>almacene su información digitalmente.</p>
+                </div>
+            </div>
+        </a>
+
+        <div id="eventBaseDatos" (click)="ocultarTarjeta('eventBaseDatos')" class="envolturaPopup">
+            <div class="popup">
+                <div class="popupClose">X</div>
+                <div class="modal-content">
+                    <img src="https://i.ibb.co/ZJFxsdt/database.jpg" alt="">
+                    <span>BASE DE DATOS</span>
+                    <p>Gracias a las base de datos podemos almacenar y ver nuestra informacion de manera segura. Esta  se de datos se integran a los sistemas brindando mayor seguridad y rendimiento al realiza eraciones sobre estos datos almacenados.</p>
+                </div>
+            </div>
+        </div>
+                
+        <!-- ***** -->  
+                
+        <a id="metodologia" (click)="mostrarTarjeta('eventMetodologia')">
+            <div class="tarjetaTec">
+                <img src="https://i.ibb.co/k40dYQC/metodologia.jpg" alt="">
+                <div class="contendidoDivTec">
+                    <span>METODOLOGIA</span>
+                    <p>Por que el tiempo es oro.</p>
+                </div>
+            </div>
+        </a>
+        <div id="eventMetodologia" (click)="ocultarTarjeta('eventMetodologia')" class="envolturaPopup">
+                <div class="popup">
+                    <div class="popupClose">X</div>
+                        <div class="modal-content">
+                            <img src="https://i.ibb.co/k40dYQC/metodologia.jpg" alt="">
+                            <span>METODOLOGIA</span>
+                            <p>La utilización de metodologias de trabajo en el ambito de desarrollo de software, se hace indispensable para culminar las metas propuestas en el tiempo acordado.</p>
+                        </div>
+                </div>
+        </div>
+        
+        <!-- ***** -->
+        
+        <a id="controlVersiones" (click)="mostrarTarjeta('eventControlVersiones')">
+            <div class="tarjetaTec">
+                <img src="https://i.ibb.co/LJzNcfz/git.png" alt="">
+                <div class="contendidoDivTec">
+                    <span>CONTROL DE VERSIONES</span>
+                    <p>Conocer cada cambio en el desarrollo.</p>
+                </div>
+            </div>
+        </a>
+
+        <div id="eventControlVersiones" (click)="ocultarTarjeta('eventControlVersiones')" class="envolturaPopup">
+                <div class="popup">
+                    <div class="popupClose">X</div>
+                        <div class="modal-content">
+                            <img src="https://i.ibb.co/LJzNcfz/git.png" alt="">
+                            <span>CONTROL DE VERSIONES</span>
+                            <p>Cuando se desarrolla un sistema es importante conocer cada cambio que se va realizando en el código; por ello implementar un controlador de versiones es indispensable ya que este nos brinda información de cada cambio, ademas de verlos detalladamente.</p>
+                        </div>
+                </div>
+        </div>
+        
+        <!-- ***** -->
+        
+        <a id="cleanCode" (click)="mostrarTarjeta('eventCleanCode')">
+            <div class="tarjetaTec">
+                <img src="https://i.ibb.co/pJV8wYR/develpoing.jpg" alt="">
+                <div class="contendidoDivTec">
+                    <span>CLEAN CODE</span>
+                    <p>Por que lo simple enamora.</p>
+                </div>
+            </div>
+        </a>
+        <div id="eventCleanCode" (click)="ocultarTarjeta('eventCleanCode')" class="envolturaPopup">
+                <div class="popup">
+                    <div class="popupClose">X</div>
+                        <div class="modal-content">
+                            <img src="https://i.ibb.co/pJV8wYR/develpoing.jpg" alt="">
+                            <span>CLEAN CODE</span>
+                            <p>Escribir un codigo limpio es una caulidad importante para el desarrollo de software, ya que ayuda a entender de una manera eficiente el codigo escrito. ademas de volver mas agil la comprension de este.</p>
+                        </div>
+                </div>
+        </div>
+
+    </div>
+
+</section>

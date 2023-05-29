@@ -16,13 +16,13 @@
         <div class="boton-menu" *ngIf="!mostrarEnlaces"><a (mousedown)="cambiarMenu()">&#9776;</a></div>
 
         <div class="enlaces"  *ngIf="mostrarEnlaces">
-            
-            <li class="navLi slide-in-right" (click)="containerInicio()" id="liInicio"><a>Inicio</a></li>
-            <li class="navLi slide-in-right1" (click)="containerConocimientos()" id="liConocimientos"><a>Conocimientos</a></li>
-            <li class="navLi slide-in-right2" (click)="containerProyectos()" id="liProyectos"><a>Proyectos</a></li>
-            <li class="navLi slide-in-right3" (click)="containerDocumentos()" id="liDocumentos"><a>Documentos</a></li>
-        </div>
 
+            <li class="navLi li0" (click)="containerInicio()" id="liInicio"><a>Inicio</a></li>      
+            <li class="navLi li1" (click)="containerConocimientos()" id="liConocimientos"><a>Conocimientos</a></li>
+            <li class="navLi li2" (click)="containerProyectos()" id="liProyectos"><a>Proyectos</a></li>
+            <li class="navLi li3" (click)="containerDocumentos()" id="liDocumentos"><a>Documentos</a></li>
+       
+        </div>   
     
     </nav>
 

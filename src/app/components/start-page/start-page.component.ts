@@ -7,6 +7,19 @@ import { Component } from '@angular/core';
 })
 export class StartPageComponent {
 
+  mostrarTarjeta(elementId: string): void {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.style.display = 'block';
+    }
+  }
+  
+  ocultarTarjeta(elementId: string): void {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.style.display = 'none';
+    }
+  }
   
 
 }

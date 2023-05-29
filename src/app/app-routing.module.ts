@@ -6,6 +6,7 @@ import { StartPageComponent } from './components/start-page/start-page.component
 import { CarruselComponent } from './components/objects/carrusel/carrusel.component';
 
 const routes: Routes = [
+  
   {path:'app-header', component:HeaderComponent},
   {path:'app-footer', component:FooterComponent},
   {path:'start', component: StartPageComponent},

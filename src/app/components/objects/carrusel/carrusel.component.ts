@@ -8,6 +8,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class CarruselComponent {
   private carouselInterval: any;
   private currentIndex = 0;
+  boton : boolean = false
 
   ngOnInit(): void {
     this.startCarousel();
@@ -30,6 +31,7 @@ export class CarruselComponent {
   nextSlide(): void {
     const slides = document.getElementsByClassName('slide-open');
     const nextIndex = (this.currentIndex + 1) % slides.length;
+    
     (slides[nextIndex] as HTMLInputElement).click();
     this.currentIndex = nextIndex;
   }
