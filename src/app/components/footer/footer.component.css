@@ -14,7 +14,7 @@
 .divFooter{
     color: white;
     background: #020940 url(/assets/img/background-header.png) center center/cover no-repeat local;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     height: auto;
     display: flex;
     justify-content: space-between;

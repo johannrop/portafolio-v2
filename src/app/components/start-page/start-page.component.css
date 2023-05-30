@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
     
     
   }
@@ -37,15 +38,17 @@
   .divPresentacion{
     display: flex;
     align-items: center;
-    height: auto;
+    height: 100%;
     background: white;
-    border-bottom: 1px solid black
+    align-items: center;
+    /* border-bottom: 1px solid black */
 
   }
 
   .img-presentacion{
     width: 50vh;
-    padding: 20px 5px 20px 10px;
+    margin: 20px ;
+    border-radius: 16px;
   }
   
   .pPresentacion{
@@ -58,7 +61,7 @@
   .pesentacion{
     padding: 0 28px 0 28px;
     color: #000000;
-    font-size: 20px;
+    font-size: 32px;
     font-family: 'Roboto', sans-serif;
   }
   /* finaliza section de presentacion */
@@ -69,12 +72,13 @@
 
   /** Comienza la seccion de Actitudes */
   .tecnologias{
+    background: #bfc6ff url(/assets/img/banner4.png) center center/cover no-repeat local; 
     color: #0026ca;
     display: flex;
-    justify-content:center;
+
     flex-direction: column;
-    align-items: center;
-    /* padding: 100px; */ 
+
+    height: 100vh;
   }
   
   .tituloActitudes{
@@ -85,13 +89,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: #000000; 
-    background: #020940 url(/assets/img/imgDiv3.png) center center/cover no-repeat local;     
+  
+    /* background: #020940 url(/assets/img/imgDiv3.png) center center/cover no-repeat local;      */
+  }
+
+  .popupClose{
+    cursor: pointer;
   }
   
   #pTar{
-    font-size: 18px;
+    font-size: 48px;
     color: #ffffff;
+    font-weight: 600;
   }
   
   .tecnologias img{
@@ -111,8 +120,9 @@
       padding-bottom: 30px;
       justify-content: center;
       font-size: 18px;
-      background: #E8F9FD;
       width: 100%;
+      align-items: center;
+      height: 78%;
   
       
   }
@@ -148,6 +158,8 @@
     border:1px solid #828282;
     
   }
+
+
   .tarjetaPro{
     border-radius: 15px;
     padding: 20px;
@@ -238,14 +250,106 @@
       
     }
 
+    #pTar{
+      font-size: 28px;
+    }
+
+    .tecnologias{
+      height: auto;
+    }
+
     .divPresentacion{
       display: flex;
       flex-direction: column;
     }
 
+    .secPresentacion{
+      height: auto;
+    }
+
     .img-presentacion{
-    padding: 0;
-    margin-left: -3px;
+    display: none;
 
     }
+
+    .pPresentacion{
+      font-size: auto;
+    }
+    .pesentacion{
+      font-size: 18px;
+    }
+
+
+    .tecnologias{
+      background: #ffffff url(/assets/img/banner5.png) center center/cover no-repeat local; 
+    }
+
   }
+
+
+
+
+  /* Animaciones
+  -webkit-animation: kenburns-top 5s ease-out both;
+	        animation: kenburns-top 5s ease-out both;
+  */
+
+  @-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  
+
+  @-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+      transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+      transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+    }
+  }
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+      transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+      transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+    }
+  }
+  
