@@ -72,7 +72,7 @@
 
   /** Comienza la seccion de Actitudes */
   .tecnologias{
-    background: #bfc6ff url(/assets/img/banner4.png) center center/cover no-repeat local; 
+    background: #ffffff url(/assets/img/banner4.png) center center/cover no-repeat local; 
     color: #0026ca;
     display: flex;
 
@@ -196,21 +196,7 @@
     animation:jump 1s ease 0s 1 normal;
     }
     
-    @-webkit-keyframes jump{
-    0%{ -webkit-transform:translateY(0); transform:translateY(0); }
-    20%{ -webkit-transform:translateY(0); transform:translateY(0); }
-    40%{ -webkit-transform:translateY(-30px); transform:translateY(-30px); }
-    50%{ -webkit-transform:translateY(0); transform:translateY(0); }
-  
-    }
-    
-    @keyframes jump{
-    0%{ transform:translateY(0); }
-    20%{ transform:translateY(0); }
-    40%{ transform:translateY(-30px); }
-    50%{ transform:translateY(0); }
-  
-    }
+   
   
   .contendidoDivTec{
     padding: 24px;
@@ -243,6 +229,29 @@
 
 
     /** fin de  Actitudes */
+
+
+
+
+  /* responsive */
+  @media (min-width: 601px) and (max-width:1199px){
+
+    .tecnologias{
+      height: auto;
+    }
+    .secPresentacion{
+      height: auto;
+    }
+    .pesentacion{
+      font-size: 24px;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width:999px){
+    .img-presentacion{
+      display: none;
+      }
+  }
 
   @media (max-width: 600px){
     .divTituloPresentacion{
@@ -289,10 +298,7 @@
 
 
 
-  /* Animaciones
-  -webkit-animation: kenburns-top 5s ease-out both;
-	        animation: kenburns-top 5s ease-out both;
-  */
+  /* Animaciones  */
 
   @-webkit-keyframes kenburns-top {
     0% {
@@ -352,4 +358,20 @@
       transform-origin: top;
     }
   }
+
+  @-webkit-keyframes jump{
+    0%{ -webkit-transform:translateY(0); transform:translateY(0); }
+    20%{ -webkit-transform:translateY(0); transform:translateY(0); }
+    40%{ -webkit-transform:translateY(-30px); transform:translateY(-30px); }
+    50%{ -webkit-transform:translateY(0); transform:translateY(0); }
+  
+    }
+    
+    @keyframes jump{
+    0%{ transform:translateY(0); }
+    20%{ transform:translateY(0); }
+    40%{ transform:translateY(-30px); }
+    50%{ transform:translateY(0); }
+  
+    }
   
