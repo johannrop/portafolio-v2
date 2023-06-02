@@ -76,6 +76,7 @@ export class HeaderComponent implements OnInit {
 
   containerConocimientos(){
     if(!this.largeWindon) this.mostrarEnlaces=false;
+    this.router.navigate(['/knowledge'])
     console.log(this.mostrarEnlaces)
   }
 

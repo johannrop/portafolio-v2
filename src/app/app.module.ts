@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { StartPageComponent } from './components/start-page/start-page.component';
 import { CarruselComponent } from './components/objects/carrusel/carrusel.component';
+import { KnowledgePageComponent } from './components/knowledge-page/knowledge-page.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CarruselComponent } from './components/objects/carrusel/carrusel.compon
     HeaderComponent,
     FooterComponent,
     StartPageComponent,
-    CarruselComponent
+    CarruselComponent,
+    KnowledgePageComponent
   ],
   imports: [
     BrowserModule,
