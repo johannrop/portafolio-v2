@@ -31,7 +31,7 @@ export class HeaderComponent implements OnInit {
     
     this.largeWindon=window.innerWidth > 600;
     this.mostrarEnlaces = window.innerWidth > 600;
-    console.log(this.mostrarEnlaces)
+    // console.log(this.mostrarEnlaces)
   }
 
 
@@ -50,7 +50,7 @@ export class HeaderComponent implements OnInit {
       !this.nav.nativeElement.contains(event.target) &&
       event.target !== this.nav.nativeElement
     ) {
-      console.log('Clic fuera del elemento div');
+      //console.log('Clic fuera del elemento div');
       if(!this.largeWindon){
         this.mostrarEnlaces=false;
       }
@@ -59,39 +59,31 @@ export class HeaderComponent implements OnInit {
   }
   
 
-
-
-  cambiarMenu(){
-    
+  cambiarMenu(){    
     this.mostrarEnlaces=true;
     this.cont++;
-    console.log(this.mostrarEnlaces)
   }
 
   containerInicio(){
     if(!this.largeWindon) this.mostrarEnlaces=false;
     this.router.navigate(['/start'])
-    console.log(this.mostrarEnlaces)
   }
 
   containerConocimientos(){
     if(!this.largeWindon) this.mostrarEnlaces=false;
     this.router.navigate(['/knowledge'])
-    console.log(this.mostrarEnlaces)
   }
 
   containerProyectos(){
     if(!this.largeWindon) this.mostrarEnlaces=false;
-    console.log(this.mostrarEnlaces)
+    this.router.navigate(['/projects'])
   }
 
   containerDocumentos(){
     if(!this.largeWindon) this.mostrarEnlaces=false;
-    console.log(this.mostrarEnlaces)
   }
 
 notAlone(){
- 	
 }
 
 }

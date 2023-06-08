@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { StartPageComponent } from './components/start-page/start-page.component';
 import { CarruselComponent } from './components/objects/carrusel/carrusel.component';
 import { KnowledgePageComponent } from './components/knowledge-page/knowledge-page.component';
+import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'start',pathMatch:'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:'app-footer', component:FooterComponent},
   {path:'start', component: StartPageComponent},
   {path:'app-carrusel',component:CarruselComponent},
-  {path:'knowledge',component:KnowledgePageComponent}
+  {path:'knowledge',component:KnowledgePageComponent},
+  {path:'projects', component:ProjectsPageComponent}
 ];
 
 @NgModule({
