@@ -12,22 +12,14 @@
     display: none;
 }
 
-.popup {
-  text-align: center;
-  max-width: 300px;
-  width: 100%;
-  background: rgb(255, 255, 255);
-  padding: 20px;
-  margin: 12vh auto;
-  border-radius: 5px;
-  position: relative;
-}
+
 
   
 
 .lenguajes {
+  
   position: relative;
-  color: #0026ca;
+  color: black;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -101,7 +93,7 @@
     height: 208px;
   }
   
-   p{
+  p{
     color: #7d7c7c; 
   
   }
@@ -113,7 +105,6 @@
       padding-top: 30px;
       padding-bottom: 30px;
       justify-content: center;
-      font-size: 18px;
       width: 100%;
       align-items: center;
       height: 78%;
@@ -137,11 +128,9 @@
     background: #E8F9FD;
     width: 100%;    
   }
-  
-  .parrafoTarjeta{
-    color: #363636;
-  }
-  
+
+
+
   .tarjetaTec{
     display: inline-block;
     width: 250px;
@@ -152,11 +141,46 @@
     border:1px solid #828282;
     
   }
+
+
+  .div-crud{
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 8px;
+
+
+  }
   
   .link{
+    cursor: pointer;
     text-decoration: none;
-    color: red;
+
   }
+
+  .link p{
+    margin-top: 0;
+  }
+  .link-s{
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 8px;
+  }
+
+  
+
+  .link-s :hover{
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    color: #0026ca;
+  }
+
 
  
 
@@ -169,6 +193,7 @@
     animation-fill-mode: both;
     color: #0026ca;
   }
+  
 
   .tarjetaPro{
     border-radius: 15px;
@@ -192,50 +217,89 @@
   .imgProyecto{
     border-radius: 50%;
   }
-  
+/*   
   .tarjetaTec a{
     color: #000000;
     
   }
-  
+   */
 
 
    
     
    
   
-  .contendidoDivTec{
-    padding: 14px;
-    font-family: 'Roboto', sans-serif;
+  .contenedorDivTec{
     
-  
-  }
-
-  .contendidoDivTec a p{
-   color: #0026ca;
-    
-  
-  }
-  
-  .contenidoDivPro{
-    margin-top: 10%;
-    color: black;
-    padding: 12px;
+    display:flex ;
+    flex-direction: column;
+    margin:  10px;
     font-family: 'Roboto', sans-serif;
   }
-   
   
-  .tarjetaTec span{
+.envolturaPopup {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  background: rgba(0, 0, 0, 0.508);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.popup {
+text-align: center;
+max-width: 300px;
+width: 100%;
+background: rgb(255, 255, 255);
+padding: 20px;
+margin: 12vh auto;
+border-radius: 5px;
+position: relative;
+}
+
+
+  .sis-login{
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contenedorDivTec .tittle{
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+  }
+
+  .contenedorDivTec .ayuda{
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .contenedorDivTec .link{
+    font-size: 15px;
+    color: #0026ca;
+  }
+
+
+
+
+  
+
+  
+  /* .tarjetaTec span{
     margin-top: 12px;
     font-weight: bold;
     color: #000000;
-  }
+  } */
   
   
   
-  .tarjetaTec p{
-    color: #363636;
-  }
   /* finaliza section de tecnologias */
 
 
@@ -304,10 +368,7 @@
     .pPresentacion{
       font-size: auto;
     }
-    .pesentacion{
-      font-size: 18px;
-    }
-
+   
 
     .lenguajes{
       background: #ffffff url(/assets/img/banner7.png) center center/cover no-repeat local; 
