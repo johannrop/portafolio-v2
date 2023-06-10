@@ -76,6 +76,11 @@
   .popupClose{
     cursor: pointer;
   }
+
+  .json{
+    display: flex;
+    flex-direction: column;
+  }
   
   #pTar{
     font-size: 48px;
@@ -182,6 +187,16 @@
   }
 
 
+  .modal-content{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  pre{
+    margin: 0;
+  }
  
 
   .link :hover{
@@ -191,6 +206,10 @@
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    color: #0026ca;
+  }
+
+  .enlace-api{
     color: #0026ca;
   }
   
@@ -217,6 +236,16 @@
   .imgProyecto{
     border-radius: 50%;
   }
+
+  .clic{
+    font-size: 10px;
+  }
+
+  .button-copy{
+
+    font-size: 22px;
+  }
+  
 /*   
   .tarjetaTec a{
     color: #000000;
@@ -250,14 +279,16 @@
 }
 
 .popup {
-text-align: center;
-max-width: 300px;
-width: 100%;
-background: rgb(255, 255, 255);
-padding: 20px;
-margin: 12vh auto;
-border-radius: 5px;
-position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 12vh auto;
+  border-radius: 5px;
+  position: relative;
 }
 
 
@@ -269,6 +300,24 @@ position: relative;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .copiar-json{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .copiar-json:hover{
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    color: #0026ca;
+
   }
 
   .contenedorDivTec .tittle{

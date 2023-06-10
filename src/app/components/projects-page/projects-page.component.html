@@ -26,14 +26,19 @@
                                 <a title="Listar todos los usuarios" class="link-s" (click)="mostrarTarjeta('eventSpring')"  target="_blank">
                                     <i class="fa-solid fa-list"></i>
                                 </a>
-                                <a title="Registrar un usuario" class="link-s" (click)="mostrarTarjeta('eventSpring')"  target="_blank">
+                                <a title="Registrar un usuario" class="link-s" (click)="mostrarTarjeta('eventSpring2')"  target="_blank">
                                     <i class="fa-solid fa-floppy-disk"></i>
                                 </a>
-                                <a title="Editar un usuario" class="link-s" (click)="mostrarTarjeta('eventSpring')"  target="_blank">
+                                <a title="Editar un usuario" class="link-s" (click)="mostrarTarjeta('eventSpring3')"  target="_blank">
                                     <i class="fa-sharp fa-solid fa-pen-to-square"></i>
                                 </a>
-                                <a title="Eliminar un usuario" class="link-s" (click)="mostrarTarjeta('eventSpring')"  target="_blank">
+                                <a title="Eliminar un usuario" class="link-s" (click)="mostrarTarjeta('eventSpring4')"  target="_blank">
                                     <i class="fa-sharp fa-solid fa-trash"></i>
+                                   
+                                </a>
+                                <a title="Iniciar sesion" class="link-s" (click)="mostrarTarjeta('eventSpring5')"  target="_blank">
+                                    
+                                    <i class="fa-solid fa-envelope"></i>
                                 </a>
                                 
                             </div>  
@@ -44,16 +49,106 @@
                     </div>
                 </div>
             </a>
+
             <div id="eventSpring" (click)="ocultarTarjeta('eventSpring')" class="envolturaPopup">
                     <div class="popup">
                         <div class="popupClose">X</div>
-                            <div class="modal-content">
-                                <img src="assets/img/tecnology/spring.png" alt="">
-                                <span>SPRING</span>
-                                <p>Spring es un framework de desarrollo de aplicaciones empresariales basado en Java. Proporciona un enfoque modular y una amplia gama de características para facilitar el desarrollo, la integración y la implementación de aplicaciones robustas y escalables..</p>
+                            <div class="modal-content">               
+                                <span>ENDPOINT</span>
+                                <p>Listar todos los usuarios:</p>                         
+                                <div class="json">
+                                    <p value="" >GET: <a class="enlace-api" href="https://johannrop.bio/api/list"  target="_blank">https://johannrop.bio/api/list</a> </p>
+                                    
+                                    <div class="copiar-json" (click)="copyListLink()">
+                                        <div class="button-copy">
+                                            <i class="fa-solid fa-copy"></i>          
+                                        </div>                    
+                                        <span class="clic">clic para copiar</span>
+                                    </div>  
+                                </div>
+                                 
                             </div>
                     </div>
             </div>
+
+            <div id="eventSpring2" (click)="ocultarTarjeta('eventSpring2')" class="envolturaPopup">
+                <div class="popup">
+                    <div class="popupClose">X</div>
+                        <div class="modal-content">               
+                            <span>ENDPOINT</span>
+                            <p>Registrarse:</p>                         
+                            <div class="json">
+                                <p value="" >POST: <a class="enlace-api" href="https://johannrop.bio/api/register"  target="_blank">https://johannrop.bio/api/register</a></p>
+                                <div class="copiar-json" (click)="copyRegisterLink()">
+                                    <div class="button-copy">
+                                        <i class="fa-solid fa-copy"></i>          
+                                    </div>                    
+                                    <span class="clic">clic para copiar</span>
+                                </div>  
+                                <p>JSON:</p>
+                                <pre value="" #json >
+                                    {{register}}
+                                </pre>
+                            </div>
+                            <div class="copiar-json" (click)="copyRegister()">
+                                <div class="button-copy">
+                                    <i class="fa-solid fa-copy"></i>          
+                                </div>                    
+                                <span class="clic">clic para copiar</span>
+                            </div>    
+                        </div>
+                </div>
+        </div>
+
+        <div id="eventSpring3" (click)="ocultarTarjeta('eventSpring3')" class="envolturaPopup">
+            <div class="popup">
+                <div class="popupClose">X</div>
+                    <div class="modal-content">               
+                        <span>ENDPOINT</span>
+                        <p>Actualizar:</p>                         
+                        <div class="json">
+                            <p value="" >PUT: <a class="enlace-api" href="https://johannrop.bio/api/update/id"  target="_blank">https://johannrop.bio/api/update/#_id</a></p>
+                            <div class="copiar-json" (click)="copyUpdateLink()">
+                                <div class="button-copy">
+                                    <i class="fa-solid fa-copy"></i>          
+                                </div>                    
+                                <span class="clic">clic para copiar</span>
+                            </div>  
+                            <p>JSON:</p>
+                            <pre value="" #json >
+                                {{register}}
+                            </pre>
+                        </div>
+                        <div class="copiar-json" (click)="copyUpdateLink()">
+                            <div class="button-copy">
+                                <i class="fa-solid fa-copy"></i>          
+                            </div>                    
+                            <span class="clic">clic para copiar</span>
+                        </div>    
+                    </div>
+            </div>
+    </div>
+
+    <div id="eventSpring4" (click)="ocultarTarjeta('eventSpring4')" class="envolturaPopup">
+        <div class="popup">
+            <div class="popupClose">X</div>
+                <div class="modal-content">               
+                    <span>ENDPOINT</span>
+                    <p>Eliminar un usuario:</p>                         
+                    <div class="json">
+                        <p value="" >DELETE: <a class="enlace-api" href="https://johannrop.bio/api/delete/id"  target="_blank">https://johannrop.bio/api/delete/#_id</a></p>
+                        <div class="copiar-json" (click)="copyUpdateLink()">
+                            <div class="button-copy">
+                                <i class="fa-solid fa-copy"></i>          
+                            </div>                    
+                            <span class="clic">clic para copiar</span>
+                        </div>  
+                  
+                    </div>
+                     
+                </div>
+        </div>
+    </div>
         
 
 <!-- ***** -->
@@ -64,9 +159,9 @@
                     <img src="assets/img/tecnology/angular.png" alt="">
                     <div class="contenedorDivTec">
                         <span class="tittle">ANGULAR</span>
-                        <a class="link" href="https://stirring-babka-d66e58.netlify.app/"  target="_blank"><p>Administrador</p></a>
-                        <a class="link" href="https://johannrop.com"  target="_blank"><p>Portafolio V2</p></a>
                         <a class="link" href="https://johannrop.com"  target="_blank"><p>Login</p></a>
+                        <a class="link" href="https://johannrop.com"  target="_blank"><p>Portafolio V2</p></a>
+                        <a class="link" href="https://stirring-babka-d66e58.netlify.app/"  target="_blank"><p>Administrador</p></a>                                             
                     </div>
                 </div>
             </a>
@@ -83,9 +178,8 @@
           <img src="assets/img/tecnology/javaScript.png" alt="">
           <div class="contenedorDivTec">
             <span class="tittle">JAVASCRIPT</span>
-            <a class="link" href="https://portafolio.ing-johann.repl.co/"  target="_blank"> <p>Portafolio V1</p></a>
+            <a class="link" href="https://desarrollo.johannrop.com"  target="_blank"> <p>Portafolio V1</p></a>
             <a class="link" href="https://cucuta.gov.co/"  target="_blank"> <p>Pagina Institucional</p></a>
-
           </div>
         </div>
       </a>
